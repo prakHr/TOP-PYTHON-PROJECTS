@@ -7,7 +7,24 @@ def outlier_detection_audio_pipeline(df,audio_column,label_column,test_size = 0.
     import torch
     from cleanlab import Datalab
     from speechbrain.pretrained import EncoderClassifier
+    def argCheck_outlier_detection_audio_pipeline(df,audio_column,label_column,test_size,cv_n_folds):
+        if type(df)!=pd.DataFrame:
+            return "df is not pandas DataFrame!"
+        if type(cv_n_folds)!=int and cv_n_folds<=0:
+            return "either num_crossval_folds is not integer or num_crossval_folds is <=0!"
+        if type(test_size)!=float and not 0.0<test_size<1.0:
+            return "either test_size is not float or test_size is not b/w (0,1)"    
+        cols = list(df.columns)
+        Columns = [audio_column,label_column]
+        for Column in Columns:
+            if Column not in cols:
+                return f"{Column} not one of {cols}."
 
+        return True
+
+    check = argCheck_outlier_detection_audio_pipeline(df,audio_column,label_column,test_size,cv_n_folds)
+    if not check:
+        return check
     SEED = 456  # ensure reproducibility
     feature_extractor = EncoderClassifier.from_hparams(
       "speechbrain/spkrec-xvect-voxceleb",
