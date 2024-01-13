@@ -25,7 +25,7 @@ def outlier_detection_tabular_pipeline(X,labels,clf,numeric_features,num_crossva
     ranked_label_issues = find_label_issues(
         labels=labels, pred_probs=pred_probs, return_indices_ranked_by="self_confidence"
     )
-    rv["label issues"] = X_raw.iloc[ranked_label_issues].assign(label=labels_raw.iloc[ranked_label_issues])
+    rv["ranked label issues"] = ranked_label_issues
 
     print(f"Cleanlab found {len(ranked_label_issues)} potential label errors.")
     X_train, X_test, labels_train, labels_test = train_test_split(
