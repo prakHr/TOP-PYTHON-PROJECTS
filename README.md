@@ -3,6 +3,7 @@ Contains recently done top projects
 
 ## List of all projects
 ANOMALYDETECTION
+
 AUDIOTOWORDCLOUD
 AUTOMATEEXCELCREATION
 AUTOMATESQLQUERY
