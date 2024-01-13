@@ -80,5 +80,6 @@ if __name__=="__main__":
     df = pd.read_csv(path)
     audio_column = "wav_audio_file_path"
     label_column = "label"
+    from pprint import pprint
     rv = outlier_detection_audio_pipeline(df,audio_column,label_column)
-    
+    pprint(rv)
