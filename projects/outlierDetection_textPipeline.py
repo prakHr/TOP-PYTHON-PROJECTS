@@ -10,6 +10,24 @@ def outlier_detection_text_pipeline(df,text_column,label_column,test_size = 0.1,
 
     from cleanlab.classification import CleanLearning
     
+    def argCheck_outlier_detection_text_pipeline(df,text_column,label_column,test_size,cv_n_folds):
+        if type(test_size)!=float:
+            return f"{test_size} not a float value!"
+        if 0.0<test_size<1.0:
+            return f"{test_size} not in range (0,1)."
+        if type(cv_n_folds)!=int:
+            return f"{cv_n_folds} not a integer!"
+        if cv_n_folds<=0:
+            return f"{cv_n_folds} not > 0."
+        cols = list(df.columns)
+        Columns = [text_column,label_column]
+        for Column in Columns:
+            if Column not in cols:
+                return f"{Column} not one of {cols}."
+        return True
+    check = argCheck_outlier_detection_text_pipeline(df,text_column,label_column,test_size,cv_n_folds)
+    if not check:
+        return check
     rv = {}
     raw_texts,raw_labels = df[text_column].values, df[label_column].values
     raw_train_texts, raw_test_texts, raw_train_labels, raw_test_labels = train_test_split(raw_texts, raw_labels, test_size=test_size)
