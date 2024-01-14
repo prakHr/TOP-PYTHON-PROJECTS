@@ -2,6 +2,8 @@
 Contains recently done top projects
 
 ## List of all projects
+SPEECH DEDUP
+
 OUTLIER DETECTION MULTIMODAL PIPELINE(IMAGE TEXT AUDIO TABULAR)
 
 ANOMALYDETECTION
