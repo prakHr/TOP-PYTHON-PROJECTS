@@ -21,9 +21,9 @@ def outlier_detection_tabular_pipeline(X,labels,clf,numeric_features,num_crossva
             return "labels is not of type np.ndarray!"
         if type(numeric_features)!=list:
             return "numeric_features is not of type list!"
-        if type(num_crossval_folds)!=int and num_crossval_folds<=0:
+        if type(num_crossval_folds)!=int or num_crossval_folds<=0:
             return "either num_crossval_folds is not integer or num_crossval_folds is <=0!"
-        if type(test_size)!=float and not 0.0<test_size<1.0:
+        if type(test_size)!=float or not 0.0<test_size<1.0:
             return "either test_size is not float or test_size is not b/w (0,1)"    
         return True
 

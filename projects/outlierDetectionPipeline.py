@@ -1,6 +1,8 @@
 from outlierDetection_textPipeline import outlier_detection_text_pipeline
 from outlierDetection_tabularPipeline import outlier_detection_tabular_pipeline
 from outlierDetection_audioPipeline import outlier_detection_audio_pipeline
+from outlierDetection_imagePipeline import outlier_detection_image_pipeline
+
 def outlierDetection_multimodalPipeline(config_dict,type):
 	rv = -1
 	if type == "text":
@@ -9,21 +11,37 @@ def outlierDetection_multimodalPipeline(config_dict,type):
 		rv = outlier_detection_tabular_pipeline(config_dict["X"],config_dict["labels"],config_dict["clf"],config_dict["numeric_features"])
 	elif type == "audio":
 		rv = outlier_detection_audio_pipeline(pd.read_csv(config_dict["path"]),config_dict["audio_column"],config_dict["label_column"])
+	elif type == "image":
+		rv = outlier_detection_image_pipeline(pd.read_csv(config_dict["dataset"]),config_dict["label_column"],config_dict["image_column"])
 	return rv
 
 if __name__=="__main__":
-	import pandas as pd
-	path = r"C:\Users\gprak\Downloads\projects\Data\banking-intent-classification.csv"
-	config_dict = {
-	    "path" : path,
-	    "text_column" : "text",
-	    "label_column" : "label"
+	from datasets import load_dataset
+    dataset = load_dataset("fashion_mnist", split="train")
+    label_column = "label"
+    image_column = "image"
+    config_dict = {
+    	"dataset":dataset,
+    	"label_column":label_column,
+    	"image_column":image_column
+    }
+    type = "image"
+    rv = outlierDetection_multimodalPipeline(config_dict,type)
+    from pprint import pprint
+    pprint(rv)
+	#######################################################################################
+	# import pandas as pd
+	# path = r"C:\Users\gprak\Downloads\projects\Data\banking-intent-classification.csv"
+	# config_dict = {
+	    # "path" : path,
+	    # "text_column" : "text",
+	    # "label_column" : "label"
 	    
-	}
-	type = "text"
-	rv = outlierDetection_multimodalPipeline(config_dict,type)
-	from pprint import pprint
-	pprint(rv)
+	# }
+	# type = "text"
+	# rv = outlierDetection_multimodalPipeline(config_dict,type)
+	# from pprint import pprint
+	# pprint(rv)
 
 	#######################################################################################
 	# import pandas as pd
