@@ -270,35 +270,15 @@ def outlier_detection_image_pipeline(dataset,label_column,image_column,K = 3,n_e
     
     lab.find_issues(features=features, pred_probs=pred_probs)
     
-    lab.report()
+    # lab.report()
+    
     rv = {}
     label_issues = lab.get_issues(label_column)
     
-    label_issues_df = label_issues.query("is_label_issue").sort_values("label_score")
-    rv["label_issues_df"] = label_issues_df
-
-
-    
-    outlier_issues_df = lab.get_issues("outlier")
-    outlier_issues_df = outlier_issues_df.query("is_outlier_issue").sort_values("outlier_score")
-    rv["outlier_issues_df"] = outlier_issues_df
-
-    near_duplicate_issues_df = lab.get_issues("near_duplicate")
-    near_duplicate_issues_df = near_duplicate_issues_df.query("is_near_duplicate_issue").sort_values(
-        "near_duplicate_score"
-    )
-    rv["near_duplicate_issues_df"] = near_duplicate_issues_df
-
-    
-    dark_issues = lab.get_issues("dark")
-    dark_issues_df = dark_issues.query("is_dark_issue").sort_values("dark_score")
-    rv["dark_issues_df"] = dark_issues_df
-
-    lowinfo_issues = lab.get_issues("low_information")
-    lowinfo_issues_df = lowinfo_issues.query("is_low_information_issue").sort_values(
-        "low_information_score"
-    )
-    rv["lowinfo_issues_df"] = lowinfo_issues_df  
+    features = ["label","outlier","near_duplicate","dark","low_information"]
+    for feature in features:
+        feature_issues_df = label_issues.query(f"is_{feature}_issue").sort_values(f"{feature}_score")
+        rv[f"{feature}_issues_df"] = feature_issues_df
     return rv
 
 if __name__=="__main__":
