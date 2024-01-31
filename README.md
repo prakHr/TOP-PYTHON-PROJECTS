@@ -2,102 +2,117 @@
 Contains recently done top projects
 
 ## List of all projects
-SPEECH DEDUP
+AudioToWordcloud.py
+added top python projects
 
-OUTLIER DETECTION MULTIMODAL PIPELINE(IMAGE TEXT AUDIO TABULAR)
+HumanLanguageTranslator.py
 
-ANOMALYDETECTION
+ScopeVarForString.py
 
-AUDIOTOWORDCLOUD
+SimplestAutomatedCLIRegexChecker.py
 
-AUTOMATEEXCELCREATION
+created multimodal pipeline
 
-AUTOMATESQLQUERY
+anomalyDetection.py
 
-CALCULATENETMONEY
+automateExcelCreation.py
 
-CREATECLASSIFIERPIPELINE
+automateImputation.py
 
-CREATEWANTEDPOSTER
+automateSQLQuery.py
 
-DETECTDEADLOCK
+calculateNetMoney.py
 
-DRIFTCALCULATOR
+compare2TabularDataset.py
 
-DRONESIMULATOR
+createClassifierPipeline.py
 
-FASTMATH
+createWantedPoster.py
 
-FINDDOMAINNAMES
+detectDeadlock.py
 
-FOODCOLLECTION
+driftCalculator.py
 
-GARBAGETEXTCLEANER
+droneSimulator.py
 
-GENERATECOVERAGEREPORT
+fairnessPipeline.py
 
-GETIMPORTANTHOLIDAYSANDWORKINGDAYCHECKER
+fastMath.py
 
-GETPACKAGEINFO
+featureExtraction.py
 
-HANDWRITTENCHARACTERRECOGNITION
+findDomainNames.py
 
-HEROES
+foodCollection.py
 
-HUMANLANGUAGETRANSLATOR
+garbageTextCleaner.py
 
-IMAGETOTEXTPIPELINE
+generateCoverageReport.py
 
-ISPACKAGESAVAILABLE
+getImportantHolidaysAndWorkingDayChecker.py
 
-OPERATESPATIALNETWORK
+getPackageInfo.py
 
-OUTLIERDETECTION
+handwrittenCharacterRecognition.py
 
-OUTLIERDETECTIONPIPELINE
+heroes.py
 
-OUTLIERDETECTION_AUDIOPIPELINE
+highDimensionHypothesisTesting.py
 
-OUTLIERDETECTION_TABULARPIPELINE
+imageToTextPipeline.py
 
-OUTLIERDETECTION_TEXTPIPELINE
+isPackagesAvailable.py
 
-PLAYMUSIC
+newspaperArticleSummary.py
 
-RECONSTRUCTIMAGE
+operateSpatialNetwork.py
 
-RECONSTRUCTTEXT
+outlierDetectionPipeline.py
 
-REMOVENOISE
+outlierDetection_audioPipeline.py
 
-RUNQUATERNIONS
+outlierDetection_imagePipeline.py
 
-SCALABLEEUCLIDEANDISTANCE
+outlierDetection_tabularPipeline.py
 
-SCALABLETEXTSIMILARITY
+outlierDetection_textPipeline.py
 
-SCOPEVARFORSTRING
+playMusic.py
 
-SIMPLESTAUTOMATEDCLIREGEXCHECKER
+reconstructImage.py
 
-SPEEDUPMLRANDOMSEARCH
+reconstructText.py
 
-SURVEYQUALITY
+removeNoise.py
 
-TABLEGETTER
+runQuaternions.py
 
-TIMESERIESDATAMETRICS
+scalableEuclideanDistance.py
 
-TRANSFERFILETOMOBILEDEVICES
+scalableTextSimilarity.py
 
-TRANSLATEALL
+speech-dedup.py
 
-TRANSLATECHINESE
+speedUpMLRandomSearch.py
 
-TRANSLATEDTEXTFROMIMAGE
+surveyQuality.py
 
-TRANSLATEFRENCH
+tableGetter.py
 
-TRANSLATESENTENCES
+timeseriesDataMetrics.py
 
-VISUALIZEDATA
+train_chatbot.py
+
+transferFileToMobileDevices.py
+
+translateAll.py
+
+translateChinese.py
+
+translateFrench.py
+
+translateSentences.py
+
+translatedTextFromImage.py
+
+visualizeData.py
