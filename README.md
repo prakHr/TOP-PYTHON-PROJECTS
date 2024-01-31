@@ -2,116 +2,114 @@
 Contains recently done top projects
 
 ## List of all projects
-AudioToWordcloud.py
+AudioToWordcloud
 
-HumanLanguageTranslator.py
+HumanLanguageTranslator
 
-ScopeVarForString.py
+ScopeVarForString
 
-SimplestAutomatedCLIRegexChecker.py
+SimplestAutomatedCLIRegexChecker
 
-created multimodal pipeline
+anomalyDetection
 
-anomalyDetection.py
+automateExcelCreation
 
-automateExcelCreation.py
+automateImputation
 
-automateImputation.py
+automateSQLQuery
 
-automateSQLQuery.py
+calculateNetMoney
 
-calculateNetMoney.py
+compare2TabularDataset
 
-compare2TabularDataset.py
+createClassifierPipeline
 
-createClassifierPipeline.py
+createWantedPoster
 
-createWantedPoster.py
+detectDeadlock
 
-detectDeadlock.py
+driftCalculator
 
-driftCalculator.py
+droneSimulator
 
-droneSimulator.py
+fairnessPipeline
 
-fairnessPipeline.py
+fastMath
 
-fastMath.py
+featureExtraction
 
-featureExtraction.py
+findDomainNames
 
-findDomainNames.py
+foodCollection
 
-foodCollection.py
+garbageTextCleaner
 
-garbageTextCleaner.py
+generateCoverageReport
 
-generateCoverageReport.py
+getImportantHolidaysAndWorkingDayChecker
 
-getImportantHolidaysAndWorkingDayChecker.py
+getPackageInfo
 
-getPackageInfo.py
+handwrittenCharacterRecognition
 
-handwrittenCharacterRecognition.py
+heroes
 
-heroes.py
+highDimensionHypothesisTesting
 
-highDimensionHypothesisTesting.py
+imageToTextPipeline
 
-imageToTextPipeline.py
+isPackagesAvailable
 
-isPackagesAvailable.py
+newspaperArticleSummary
 
-newspaperArticleSummary.py
+operateSpatialNetwork
 
-operateSpatialNetwork.py
+outlierDetectionPipeline
 
-outlierDetectionPipeline.py
+outlierDetection_audioPipeline
 
-outlierDetection_audioPipeline.py
+outlierDetection_imagePipeline
 
-outlierDetection_imagePipeline.py
+outlierDetection_tabularPipeline
 
-outlierDetection_tabularPipeline.py
+outlierDetection_textPipeline
 
-outlierDetection_textPipeline.py
+playMusic
 
-playMusic.py
+reconstructImage
 
-reconstructImage.py
+reconstructText
 
-reconstructText.py
+removeNoise
 
-removeNoise.py
+runQuaternions
 
-runQuaternions.py
+scalableEuclideanDistance
 
-scalableEuclideanDistance.py
+scalableTextSimilarity
 
-scalableTextSimilarity.py
+speech-dedup
 
-speech-dedup.py
+speedUpMLRandomSearch
 
-speedUpMLRandomSearch.py
+surveyQuality
 
-surveyQuality.py
+tableGetter
 
-tableGetter.py
+timeseriesDataMetrics
 
-timeseriesDataMetrics.py
+train_chatbot
 
-train_chatbot.py
+transferFileToMobileDevices
 
-transferFileToMobileDevices.py
+translateAll
 
-translateAll.py
+translateChinese
 
-translateChinese.py
+translateFrench
 
-translateFrench.py
+translateSentences
 
-translateSentences.py
+translatedTextFromImage
 
-translatedTextFromImage.py
-
-visualizeData.py
+visualizeData
