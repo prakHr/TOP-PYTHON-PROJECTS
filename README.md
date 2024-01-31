@@ -3,7 +3,6 @@ Contains recently done top projects
 
 ## List of all projects
 AudioToWordcloud.py
-added top python projects
 
 HumanLanguageTranslator.py
 
